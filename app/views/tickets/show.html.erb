@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @ticket.title %>
+</p>
+
+<p>
+  <strong>Preco:</strong>
+  <%= @ticket.price %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @ticket.description %>
+</p>
+
+<%= link_to 'Editar', edit_ticket_path(@ticket) %> |
+<%= link_to 'Voltar', tickets_path %>
